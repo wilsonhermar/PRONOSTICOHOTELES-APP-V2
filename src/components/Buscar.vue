@@ -23,7 +23,6 @@ export default {
         created:function(){
             let self = this
             let nombre_hotel = null
-            //let aux = "https://hotel-pronostico.herokuapp.com/hotel/search/{nombre}?name=" --> URL GITHUB
             let aux = "https://pronosticohoteles-api.herokuapp.com/hotel/search/{nombre}?name="
             nombre_hotel = document.getElementsByName("nombreHotel")[0].value
             let url = aux+nombre_hotel

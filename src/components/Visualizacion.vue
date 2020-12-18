@@ -1,7 +1,7 @@
 <template>
     <div class= 'visualizacion'>
         <h1>{{titulo}}</h1>
-        <img src="@/assets/construccion.png" alt="" width="25%" height="25%" />
+        <img src="@/assets/AT_HOME.png" alt="" width="25%" height="25%" />
     </div>   
 </template>
 
