@@ -1,1 +1,1 @@
-PRONOSTICOHOTELES-APP-V2
+pronosticoshoteles-app
