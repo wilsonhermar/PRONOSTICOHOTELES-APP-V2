@@ -1,5 +1,5 @@
 <template>
-    <div class= 'pronosticos'>
+    <div class= 'visualizacion'>
         <h1>{{titulo}}</h1>
         <img src="@/assets/construccion.png" alt="" width="25%" height="25%" />
     </div>   
@@ -7,10 +7,10 @@
 
 <script>
 export default {
-    name: 'Pronosticos',
+    name: 'Visualizacion',
     data: function(){
     return{
-        titulo : 'Estamos trabajando en el desarrollo del modulo de PRONOSTICOS'
+        titulo : 'Estamos trabajando en el desarrollo del modulo de VISUALIZACION'
     }
   },
   methods:{
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-.pronosticos h1 {
+.visualizacion h1 {
     font-family: "Homer Simpson UI";
     color: #000000;
     text-align: center;

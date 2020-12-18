@@ -1,5 +1,5 @@
 <template>
-    <div class= 'basedatos'>
+    <div class= 'informacion'>
       <header>
           <nav>
             <button v-on:click="init">INICIO</button>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'Basedatos',
+    name: 'Informacion',
     data: function(){
     return{
     }
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style>
-.basedatos{
+.informacion{
     padding: 0;
     width: 100%;
     height: 10vh;
@@ -55,7 +55,7 @@ export default {
     margin-top: 10%;
   }
 
-.basedatos nav {
+.informacion nav {
     display: block;
     align-items: center;
     margin:1px;
@@ -63,7 +63,7 @@ export default {
     margin-inline: 24%;
     justify-content: space-between;
 }
-.basedatos nav button{
+.informacion nav button{
     color: #E5E7E9;
     background: #1179e9;
     font-size: 14px;
@@ -77,7 +77,7 @@ export default {
     width: 150px;
     height: 50px;
 }
-.basedatos nav button:hover{
+.informacion nav button:hover{
     color: #000000;
     background: #85C1E9;
     border: 1px solid #85C1E9;

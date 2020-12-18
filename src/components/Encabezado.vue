@@ -3,10 +3,9 @@
       <header>
           <h1>{{titulo}}</h1>
           <nav>
-            <button v-on:click="basedata">BASE DE DATOS</button>
-            <button v-on:click="pronosticos">PRONOSTICOS</button>
-            <button v-on:click="graficas">GRAFICAS</button>
-            <button v-on:click="informe">INFORME</button>
+            <button v-on:click="basedata">INFORMACIÓN</button>
+            <button v-on:click="pronosticos">ANÁLISIS</button>
+            <button v-on:click="graficas">VISUALIZACIÓN</button>
           </nav>
       </header>
     </div>
@@ -23,16 +22,13 @@ export default {
   },
   methods:{
     basedata: function(){
-      this.$router.push({name:"basedatos"})
+      this.$router.push({name:"informacion"})
     },
     pronosticos: function(){
-      this.$router.push({name:"pronosticos"})
+      this.$router.push({name:"analisis"})
     },
     graficas: function(){
-      this.$router.push({name:"graficas"})
-    },
-    informe: function(){
-      this.$router.push({name:"informe"})
+      this.$router.push({name:"visualizacion"})
     }
   }
 }

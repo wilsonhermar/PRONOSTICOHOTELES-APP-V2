@@ -7,10 +7,10 @@ import Buscar from './components/Buscar'
 import Actualizar from './components/Actualizar'
 import Borrar from './components/Borrar'
 import Crear from './components/Crear'
-import BaseDatos from './components/BaseDatos'
-import Pronosticos from './components/Pronosticos'
-import Informe from './components/Informe'
-import Graficas from './components/Graficas'
+import Informacion from './components/Informacion'
+import Analisis from './components/Analisis'
+import Visualizacion from './components/Visualizacion'
+
 
 const router = new vueRouter({
   mode: 'history',
@@ -47,24 +47,19 @@ const router = new vueRouter({
       component: Crear
      },
      {
-      path: '/basedatos',
-      name: "basedatos",
-      component: BaseDatos
+      path: '/informacion',
+      name: "informacion",
+      component: Informacion
      },
      {
-      path: '/pronosticos',
-      name: "pronosticos",
-      component: Pronosticos
+      path: '/analisis',
+      name: "analisis",
+      component: Analisis
      },
      {
-      path: '/informe',
-      name: "informe",
-      component: Informe
-     },
-     {
-      path: '/graficas',
-      name: "graficas",
-      component: Graficas
+      path: '/visualizacion',
+      name: "visualizacion",
+      component: Visualizacion
      }
   ]
 })
