@@ -58,11 +58,45 @@ export default {
         precioMinTrip_Hotel = document.getElementsByName("precioMinTripHotel")[0].value
         suite_Hotel = document.getElementsByName("suiteHotel")[0].value
         precioMinSuite_Hotel = document.getElementsByName("precioMinSuiteHotel")[0].value
-
-
-
-
         let self = this
+        let TasaCons = [
+            {
+                Enero: 0.23
+            },
+            {
+                Febrero: 0.23
+            },
+            {
+                Marzo: 0.23
+            },
+            {
+                Abril: 0.23
+            },
+            {
+                Mayo: 0.23
+            },
+            {
+                Junio: 0.23
+            },
+            {
+                Julio: 0.23
+            },
+            {
+                Agosto: 0.23
+            },
+            {
+                Septiembre: 0.23
+            },
+            {
+                Octubre: 0.23
+            },
+            {
+                Noviembre: 0.23
+            },
+            {
+                Diciembre: 0.23
+            }
+        ]        
         let post = {
             nombre: nombre_hotel,
             ubicacion: ubicacion_Hotel,
@@ -76,9 +110,10 @@ export default {
             precioMinTrip: precioMinTrip_Hotel,
             suite: suite_Hotel,
             precioMinSuite: precioMinSuite_Hotel,
+            Tasa: TasaCons
         };
-        axios.put("https://pronosticohoteles-api.herokuapp.com/hotel/update/",post)
-        //axios.put("http://127.0.0.1:8000/hotel/update/",post)
+        //axios.put("https://pronosticohoteles-api.herokuapp.com/hotel/update/",post)
+        axios.put("http://127.0.0.1:8000/hotel/update/",post)
             .then((result) =>{
                 self.mensaje = result.data
             })
