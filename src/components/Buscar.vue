@@ -32,10 +32,10 @@ export default {
                 self.mensaje = ("El "+result.data.nombre +" Esta ubicado en "+ result.data.ubicacion +
                                 " , tiene "+ result.data.estrellas + " estrellas. El numero total de habitaciones son: "+
                                 result.data.totalHabitaciones + ". La cantidad de habitaciones sencillas son: "
-                                + result.data.sencilla + ", el valor de cada habitacion sencilla es : " + result.data.precioMinSenc 
-                                + " . La cantidad de habitaciones dobles son : " + result.data.doble + " , el valor de cada habitacion doble es : "
+                                + result.data.sencilla + ", el valor promedio de cada habitacion sencilla es : " + result.data.precioMinSenc 
+                                + " . La cantidad de habitaciones dobles son : " + result.data.doble + " , el valor promedio de cada habitacion doble es : "
                                 + result.data.precioMinDob + " . La cantidad de habitaciones tripes son : " + result.data.triple 
-                                + " , el valor de cada habitacion triple es : " + result.data.precioMinTrip +
+                                + " , el valor promedio de cada habitacion triple es : " + result.data.precioMinTrip +
                                 " . La cantidad de Suits son : " + result.data.suite + " , El costo de cada suit es : " + result.data.precioMinSuite 
                                 )
             })

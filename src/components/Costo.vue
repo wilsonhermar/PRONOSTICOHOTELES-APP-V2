@@ -33,15 +33,41 @@ export default {
             let nombre_hotel = null
             let tipo_habitacion = null
             let mes_b = null
+            let aux_mes = null
             let aux = "https://pronosticoshoteles-api-v2.herokuapp.com/costo/search/"
             //let aux = "http://127.0.0.1:8000/costo/search/"
             nombre_hotel = document.getElementsByName("nombreHotel")[0].value
             tipo_habitacion = document.getElementsByName("tipo")[0].value
             mes_b = document.getElementsByName("mes")[0].value
             let url = aux+nombre_hotel+","+mes_b+","+tipo_habitacion
+            if (mes_b==='1'){
+                aux_mes = 'enero'
+            }else if(mes_b==='2'){
+                aux_mes = 'febrero'
+            }else if(mes_b==='3'){
+                aux_mes = 'marzo'
+            }else if(mes_b==='4'){
+                aux_mes = 'abril'
+            }else if(mes_b==='5'){
+                aux_mes = 'mayo'
+            }else if(mes_b==='6'){
+                aux_mes = 'junio'
+            }else if(mes_b==='7'){
+                aux_mes = 'julio'
+            }else if(mes_b==='8'){
+                aux_mes = 'agosto'
+            }else if(mes_b==='9'){
+                aux_mes = 'septiembre'
+            }else if(mes_b==='10'){
+                aux_mes = 'octubre'
+            }else if(mes_b==='11'){
+                aux_mes = 'noviembre'
+            }else{
+                aux_mes = 'diciembre'
+            }
             axios.get(url)
             .then((result) =>{
-                self.mensaje = ("La habitación "+tipo_habitacion+" en el hotel "+nombre_hotel+" durante el mes:"+mes_b+" tiene un costo de: $"+result.data[1])
+                self.mensaje = ("La habitación "+tipo_habitacion+" en el hotel "+nombre_hotel+" durante el mes de "+aux_mes+" tiene un costo de: $"+result.data[1])
             })
             .catch((error)=> {
                 self.mensaje = "[NO ES POSIBLE BUSCAR EL REGISTRO , NO EXISTE EN LA BASE DE DATOS]"
