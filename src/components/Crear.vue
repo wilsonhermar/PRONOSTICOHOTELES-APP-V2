@@ -59,9 +59,6 @@ export default {
             suite_Hotel = document.getElementsByName("suiteHotel")[0].value
             precioMinSuite_Hotel = document.getElementsByName("precioMinSuiteHotel")[0].value
 
-
-
-
             let self = this
             let TasaCons = [
                 {

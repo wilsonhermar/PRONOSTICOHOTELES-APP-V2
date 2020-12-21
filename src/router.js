@@ -10,6 +10,8 @@ import Crear from './components/Crear'
 import Informacion from './components/Informacion'
 import Analisis from './components/Analisis'
 import Visualizacion from './components/Visualizacion'
+import Temporada from './components/Temporada'
+import Costo from './components/Costo'
 
 
 const router = new vueRouter({
@@ -60,6 +62,16 @@ const router = new vueRouter({
       path: '/visualizacion',
       name: "visualizacion",
       component: Visualizacion
+     },
+     {
+      path: '/temporada',
+      name: "temporada",
+      component: Temporada
+     },
+     {
+      path: '/costo',
+      name: "costo",
+      component: Costo
      }
   ]
 })
