@@ -84,7 +84,7 @@ export default {
     #borrar h3{
         text-align:center;
         font-family: "Homer Simpson UI";
-        color: #db0c0cbe;
+        color: #000000;
         font-size: 4.5vh;
         margin-top: 1%;
     }
