@@ -33,7 +33,7 @@ export default {
             let nombre_hotel = null
             let tipo_habitacion = null
             let mes_b = null
-            let aux = "https://pronosticohoteles-api-v2.herokuapp.com/costo/search/"
+            let aux = "https://pronosticoshoteles-api-v2.herokuapp.com/costo/search/"
             //let aux = "http://127.0.0.1:8000/costo/search/"
             nombre_hotel = document.getElementsByName("nombreHotel")[0].value
             tipo_habitacion = document.getElementsByName("tipo")[0].value

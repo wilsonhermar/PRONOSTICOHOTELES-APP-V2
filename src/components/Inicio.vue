@@ -17,7 +17,7 @@ export default {
     },
     created:function(){
         let self = this
-        axios.get("https://pronosticohoteles-api-v2.herokuapp.com/test/")
+        axios.get("https://pronosticoshoteles-api-v2.herokuapp.com/test/")
         //axios.get("http://127.0.0.1:8000/test/")
             .then((result) =>{
                 self.mensaje = result.data

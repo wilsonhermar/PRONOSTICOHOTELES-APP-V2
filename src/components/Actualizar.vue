@@ -61,40 +61,40 @@ export default {
         let self = this
         let TasaCons = [
             {
-                Enero: 0.23
+                Enero: 0.88
             },
             {
-                Febrero: 0.23
+                Febrero: 0.33
             },
             {
-                Marzo: 0.23
+                Marzo: 0.15
             },
             {
-                Abril: 0.23
+                Abril: 0.24
             },
             {
-                Mayo: 0.23
+                Mayo: 0.25
             },
             {
-                Junio: 0.23
+                Junio: 0.45
             },
             {
-                Julio: 0.23
+                Julio: 0.55
             },
             {
-                Agosto: 0.23
+                Agosto: 0.25
             },
             {
-                Septiembre: 0.23
+                Septiembre: 0.20
             },
             {
-                Octubre: 0.23
+                Octubre: 0.25
             },
             {
-                Noviembre: 0.23
+                Noviembre: 0.10
             },
             {
-                Diciembre: 0.23
+                Diciembre: 0.88
             }
         ]        
         let post = {
@@ -112,7 +112,7 @@ export default {
             precioMinSuite: precioMinSuite_Hotel,
             Tasa: TasaCons
         };
-        axios.put("https://pronosticohoteles-api-v2.herokuapp.com/hotel/update/",post)
+        axios.put("https://pronosticoshoteles-api-v2.herokuapp.com/hotel/update/",post)
         //axios.put("http://127.0.0.1:8000/hotel/update/",post)
             .then((result) =>{
                 self.mensaje = result.data

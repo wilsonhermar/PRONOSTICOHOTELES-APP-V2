@@ -23,7 +23,7 @@ export default {
         created:function(){
             let self = this
             let nombre_hotel = null
-            let aux = "https://pronosticohoteles-api-v2.herokuapp.com/hotel/search/{nombre}?name="
+            let aux = "https://pronosticoshoteles-api-v2.herokuapp.com/hotel/search/{nombre}?name="
             //let aux = "http://127.0.0.1:8000/hotel/search/{nombre}?name="
             nombre_hotel = document.getElementsByName("nombreHotel")[0].value
             let url = aux+nombre_hotel
