@@ -1,6 +1,6 @@
 <template>
     <div class= 'informacion'>
-      <header>
+      <main-component>
           <nav>
             <button v-on:click="init">INICIO</button>
             <button v-on:click="verificacion">VERIFICACION</button>
@@ -9,7 +9,7 @@
             <button v-on:click="crear">CREAR</button>
             <button v-on:click="borrar">BORRAR</button>
           </nav>
-      </header>
+      </main-component>
     </div>
 </template>
 
@@ -45,37 +45,37 @@ export default {
 
 <style>
 .informacion{
-    padding: 0;
+    padding-top: 22vh;
     width: 100%;
     height: 10vh;
-    min-height: 100px;
+    min-height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 0;
   }
 
 .informacion nav {
-    display: block;
+    display: inline-block;
     align-items: center;
     margin:1px;
-    font-size: 20px;
-    margin-inline: 24%;
+    font-size: 3vh;
+    margin-inline: 5vh;
     justify-content: space-between;
 }
 .informacion nav button{
     color: #E5E7E9;
     background: #1179e9;
-    font-size: 14px;
+    font-size: 2vh;
     font-weight:600;
     border: 1px solid #1179e9;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 1.2vh 2vh;
     display: block;
     margin-top: .5em;
     cursor: pointer;
-    width: 150px;
-    height: 50px;
+    width: 23vh;
+    height: 6.5vh;
 }
 .informacion nav button:hover{
     color: #000000;

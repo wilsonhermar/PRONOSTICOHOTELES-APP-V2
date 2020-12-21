@@ -17,7 +17,7 @@
         <input type="text" name="precioMinSuiteHotel" value="Valor Habitacion suit"/>
 
         <button v-on:click="created">EJECUTAR</button>
-        <p>{{mensaje}}</p>
+        <h3>{{mensaje}}</h3>
     </div>   
 </template>
 
@@ -112,8 +112,8 @@ export default {
             precioMinSuite: precioMinSuite_Hotel,
             Tasa: TasaCons
         };
-        //axios.put("https://pronosticohoteles-api.herokuapp.com/hotel/update/",post)
-        axios.put("http://127.0.0.1:8000/hotel/update/",post)
+        axios.put("https://pronosticohoteles-api-v2.herokuapp.com/hotel/update/",post)
+        //axios.put("http://127.0.0.1:8000/hotel/update/",post)
             .then((result) =>{
                 self.mensaje = result.data
             })
@@ -130,6 +130,7 @@ export default {
         display:block;
         display: flex;
         padding: 0%;
+        font-size: 2vh;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -137,12 +138,12 @@ export default {
 
     #actualizar button{
         color: #E5E7E9;
-        background: #3498DB;
-        font-size: 12px;
+        background: #1179e9;
+        font-size: 2vh;
         font-weight:600;
-        border: 1px solid #3498DB;
+        border: 1px solid #1179e9;
         border-radius: 5px;
-        padding: 6px 20px;
+        padding: 1.2vh 2vh;
         display: block;
         cursor: pointer;
         margin-left: auto;
@@ -158,12 +159,20 @@ export default {
     }
 
     #actualizar h2{
-        text-align:center;
+        padding: 5px;
+        font-family: "Homer Simpson UI";
+        color: #000000;
+        text-align: center;
+        font-size: 6.1vh;;
+        margin-top: 0;
     }
 
-    #actualizar p{
+    #actualizar h3{
         text-align:center;
-        margin-top: 2%;
+        font-family: "Homer Simpson UI";
+        color: #db0c0cbe;
+        font-size: 4.5vh;
+        margin-top: 1%;
     }
 
 

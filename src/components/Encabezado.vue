@@ -37,20 +37,21 @@ export default {
 <style scoped>
 
 .enacbezado{
-    margin: 0%;
+    margin: 0;
     padding: 0;
     width: 100%;
-    height: 10vh;
-    min-height: 100px;
+    height: 15vh;
+    min-height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 .encabezado h1 {
     font-family: "Homer Simpson UI";
+    font-size: 7vh;
     color: #000000;
-    border: rgba(52, 152, 219, 0.384) 2px solid;
-    margin: 1%;
+    border: #3498DB;
+    margin: 5px;
     background-color: #3498DB;
     text-align: center;
 }
@@ -58,21 +59,22 @@ export default {
 .encabezado nav {
     display: flex;
     align-items: center;
-    margin:auto;
-    font-size: 20px;
-    margin-inline: 24%;
+
+    margin-inline: 7vh;
+    font-size: 0px;
     justify-content: space-between;
 }
 .encabezado nav button{
     color: #E5E7E9;
     background: #1179e9;
-    font-size: 14px;
+    font-size: 2vh;
     font-weight:600;
     border: 1px solid #1179e9;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 1.5vh 2vh;
     display: inline-block;
     cursor: pointer;
+    margin: 1vh;
 
 }
 .encabezado nav button:hover{

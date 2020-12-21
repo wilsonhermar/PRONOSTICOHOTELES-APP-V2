@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo_isa_1.png" alt="" width="25%" height="25%" />
+  <div class="app">
+    <img src="./assets/logo_isa_1.png" alt="" width="330vh" height="85vh" />
     <Encabezado></Encabezado>
     <div class ="main-component">
       <router-view></router-view>
@@ -30,18 +30,29 @@ export default {
   margin-top: 0 0 0 0;
 }
 
-.main-component{
-    height: 60vh;
-    margin: 0%;
-    padding: 0%;
-    background: #FDFEFE;
+.app{
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    background: #D6EAF8;
 }
 
+.main-component{
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/imagen_fondo.jpg");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
 .footer{
-    margin-top: 0%;
+    margin-top: 0;
     padding: 0;
     width: 100%;
-    height: 15vh;
+    height: 60%;
     background-color: #1B4F72;
     color: #E5E7E9;
 }
@@ -56,7 +67,7 @@ export default {
 }
 
 img{
-display:block;
+display:flex;
 margin:auto;
 }
 

@@ -29,37 +29,37 @@ export default {
 
 <style>
 .analisis{
-    padding: 0;
+    padding-top: 5.7vh;
     width: 100%;
-    height: 10vh;
-    min-height: 100px;
+    height: 15vh;
+    min-height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 0%;
   }
 
 .analisis nav {
     display: block;
     align-items: center;
     margin:1px;
-    font-size: 20px;
+    font-size: 3vh;
     margin-inline: 24%;
     justify-content: space-between;
 }
 .analisis nav button{
     color: #E5E7E9;
     background: #1179e9;
-    font-size: 14px;
+    font-size: 2vh;
     font-weight:600;
     border: 1px solid #1179e9;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 1.2vh 2vh;
     display: block;
     margin-top: .5em;
     cursor: pointer;
-    width: 150px;
-    height: 50px;
+    width: 23vh;
+    height: 6.5vh;
 }
 .analisis nav button:hover{
     color: #000000;

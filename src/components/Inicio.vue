@@ -1,6 +1,8 @@
 <template>
     <div id="inicio">
-        <h2> Bienvenido {{mensaje}}</h2>
+        <h2>¡BIENVENIDO!<br/><br/>
+        Presentamos nuestro modelo de aplicación para Proyectar los Precios de las Habitaciones de su Hotel.<br/><br/>
+        Estado de la red: {{mensaje}}</h2>
     </div>    
 </template>
 
@@ -15,8 +17,8 @@ export default {
     },
     created:function(){
         let self = this
-        //axios.get("https://pronosticohoteles-api.herokuapp.com/test/")
-        axios.get("http://127.0.0.1:8000/test/")
+        axios.get("https://pronosticohoteles-api-v2.herokuapp.com/test/")
+        //axios.get("http://127.0.0.1:8000/test/")
             .then((result) =>{
                 self.mensaje = result.data
             })
@@ -33,10 +35,23 @@ export default {
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+
     }
     #inicio h2{
-        color:black;
-        font-size: 30px;
+        
+        padding: 0.8vh;
+        font-family: "Homer Simpson UI";
+        color: #000000;
+        text-align: center;
+        font-size: 6vh;
+        font-weight: 200%;
+    }
+    #inicio h3{
+        padding: 5px;
+        font-family: "Homer Simpson UI";
+        color: #000000;
+        text-align: center;
+        font-size: 4.5vh;
+        font-weight: 200%;
     }
 </style>

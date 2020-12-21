@@ -1,11 +1,11 @@
 <template>
     <div id= "verificacion">
         <header>
-          <h2>{{informacion}}</h2>
+            <h2>{{informacion}}</h2>
         </header>
         <input type="text" name="nombreHotel"/>
         <button v-on:click="created">EJECUTAR</button>
-        <p>{{mensaje}}</p>
+        <h3>{{mensaje}}</h3>
     </div> 
 </template>
 
@@ -27,8 +27,8 @@ export default {
         let post = {
         nombre: nombre_hotel ,
         };
-        //axios.post("https://pronosticohoteles-api.herokuapp.com/hotel/verification/",post)
-        axios.post("http://127.0.0.1:8000/hotel/verification/",post)
+        axios.post("https://pronosticohoteles-api-v2.herokuapp.com/hotel/verification/",post)
+        //axios.post("http://127.0.0.1:8000/hotel/verification/",post)
             .then((result) =>{
                 self.mensaje = result.data
             })
@@ -42,9 +42,10 @@ export default {
 
 <style>
     #verificacion input{
-        display:block;
+        display: block;
         display: flex;
-        padding: 0%;
+        padding: 0;
+        font-size: 3vh;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -52,12 +53,12 @@ export default {
 
     #verificacion button{
         color: #E5E7E9;
-        background: #3498DB;
-        font-size: 12px;
+        background: #1179e9;
+        font-size: 2vh;
         font-weight:600;
-        border: 1px solid #3498DB;
+        border: 1px solid #1179e9;
         border-radius: 5px;
-        padding: 6px 20px;
+        padding: 1.2vh 2vh;
         display: block;
         cursor: pointer;
         margin-left: auto;
@@ -73,11 +74,19 @@ export default {
     }
 
     #verificacion h2 {
-        text-align:center;
+        padding: 5px;
+        font-family: "Homer Simpson UI";
+        color: #000000;
+        text-align: center;
+        font-size: 6.1vh;
+        margin-top: 0;
     }
 
-    #verificacion p{
+    #verificacion h3{
         text-align:center;
-        margin-top: 7%;
+        font-family: "Homer Simpson UI";
+        color: #db0c0cbe;
+        font-size: 4.5vh;
+        margin-top: 1%;
     }
 </style>

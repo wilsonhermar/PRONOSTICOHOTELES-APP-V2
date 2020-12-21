@@ -13,7 +13,7 @@
         </datalist>
         <input type="number" placeholder="N° Mes" min="1" max="12" name="mes"/>
         <button v-on:click="created">EJECUTAR</button>
-        <p>{{mensaje}}</p>
+        <h3>{{mensaje}}</h3>
     </div> 
 </template>
 
@@ -33,8 +33,8 @@ export default {
             let nombre_hotel = null
             let tipo_habitacion = null
             let mes_b = null
-            //let aux = "https://pronosticohoteles-api.herokuapp.com/costo/search/"
-            let aux = "http://127.0.0.1:8000/costo/search/"
+            let aux = "https://pronosticohoteles-api-v2.herokuapp.com/costo/search/"
+            //let aux = "http://127.0.0.1:8000/costo/search/"
             nombre_hotel = document.getElementsByName("nombreHotel")[0].value
             tipo_habitacion = document.getElementsByName("tipo")[0].value
             mes_b = document.getElementsByName("mes")[0].value
@@ -56,6 +56,7 @@ export default {
         display:block;
         display: flex;
         padding: 0%;
+        font-size: 3vh;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -63,12 +64,12 @@ export default {
 
     #costo button{
         color: #E5E7E9;
-        background: #3498DB;
-        font-size: 12px;
+        background: #1179e9;
+        font-size: 2vh;
         font-weight:600;
         border: 1px solid #3498DB;
         border-radius: 5px;
-        padding: 6px 20px;
+        padding: 1.2vh 2vh;
         display: block;
         cursor: pointer;
         margin-left: auto;
@@ -84,12 +85,21 @@ export default {
     }
 
     #costo h2{
-        text-align:center;
+        padding: 5px;
+        font-family: "Homer Simpson UI";
+        color: #000000;
+        text-align: center;
+        font-size: 6.1vh;
+        margin-top: 0;
     }
 
-    #costo p{
+    #costo h3{
         text-align:center;
-        margin-top: 7%;
+        font-family: "Homer Simpson UI";
+        color: #db0c0cbe;
+        font-size: 4.5vh;
+        font-weight: 200%;
+        margin-top: 1%;;
     }
 
 
